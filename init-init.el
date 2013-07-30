@@ -1,6 +1,6 @@
 ;;; This file bootstraps the configuration, which is divided into
 ;;; a number of other files.
-(setq debug-on-error t)
+
 (add-to-list 'load-path user-emacs-directory)
 (require 'init-benchmarking) ;; Measure startup time
 
@@ -36,26 +36,26 @@
 (require 'init-osx-keys)
 (require 'init-gui-frames)
 (require 'init-maxframe)
-;(require 'init-proxies)
-(require 'init-dired);;;
+(require 'init-proxies)
+(require 'init-dired)
 (require 'init-isearch)
 (require 'init-uniquify)
-(require 'init-ibuffer);;;
+(require 'init-ibuffer)
 (require 'init-flycheck)
 
 (require 'init-recentf)
-(require 'init-ido);;;
+(require 'init-ido)
 (require 'init-hippie-expand)
-(require 'init-auto-complete);;;
+(require 'init-auto-complete)
 (require 'init-windows)
 (require 'init-sessions)
 (require 'init-fonts)
 (require 'init-mmm)
-;(require 'init-growl)
+(require 'init-growl)
 
 (require 'init-editing-utils)
 
-;(require 'init-darcs)
+(require 'init-darcs)
 (require 'init-git)
 
 (require 'init-crontab)
@@ -63,23 +63,23 @@
 (require 'init-markdown)
 (require 'init-csv)
 (require 'init-erlang)
-(require 'init-javascript);;;;;;;;;;
+(require 'init-javascript)
 (require 'init-php)
-(require 'init-org);;;;;;;;;;
-(require 'init-nxml);;;;;;;;;;
-(require 'init-css);;;;;;;;;;
+(require 'init-org)
+(require 'init-nxml)
+(require 'init-css)
 (require 'init-haml)
-(require 'init-python-mode);;;;;;;;;;
-(require 'init-haskell);;;;;;;;;;
-(require 'init-ruby-mode);;;;;;;;;;
-(require 'init-rails);;;;;;;;;;
-(require 'init-sql);;;;;;;;;;
+(require 'init-python-mode)
+(require 'init-haskell)
+(require 'init-ruby-mode)
+(require 'init-rails)
+(require 'init-sql)
 
-(require 'init-paredit);;;;;;;;;;
-(require 'init-lisp);;;;;;;;;;
-(require 'init-slime);;;;;;;;;;
-(require 'init-clojure);;;;;;;;;;
-(require 'init-common-lisp);;;;;;;;;;
+(require 'init-paredit)
+(require 'init-lisp)
+(require 'init-slime)
+(require 'init-clojure)
+(require 'init-common-lisp)
 
 (when *spell-check-support-enabled*
   (require 'init-spelling))
